@@ -15,9 +15,8 @@ const generateTemplate = todo => {
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-    const todo = form.newTodo.value.trim(); // trim method to remove white spaces before or after
-    // console.log(todo);
-    if (todo.length) { // to prevent adding empty space 
+    const todo = form.newTodo.value.trim();
+    if (todo.length) { // to prevent submition of empty space 
         generateTemplate(todo);
         form.reset();
     }
