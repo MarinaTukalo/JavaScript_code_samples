@@ -1,4 +1,4 @@
-const correctAnswers = ['B', 'A', 'A', 'B'];
+const correctAnswers = ['B', 'B', 'B', 'B'];
 const form = document.querySelector('.quiz-form');
 const result = document.querySelector('.result');
 
@@ -15,7 +15,7 @@ form.addEventListener('submit', e => {
         }
     });
     //show result on page
-    scrollTo(0, 0); // window method, bring us directly to the top.
+    scrollTo(0, 0); // it's a window method, bring us directly to the top.
     result.classList.remove('d-none');
 
     let output = 0;
